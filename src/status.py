@@ -5,17 +5,17 @@ import win32api
 from notification import display_notification
 
 
-def calculate_status():
+def send_reminders():
     current_system_code = 0
-    time_elapsed = 0
     secs_since_last_active = 0
-    while True:
+    secs_since_last_away = 0
+    while REMINDERS_ENABLED is True:
         new_system_code = win32api.GetLastInputInfo()
+
         if current_system_code == new_system_code:
             active = False
         else:
             active = True
-            time_elapsed = 0
 
         if active is False:
             secs_since_last_active += 1
@@ -27,15 +27,17 @@ def calculate_status():
         else:
             away = False
 
-        if time_elapsed >= 1200 and away is False:
-            display_notification()
-            time_elapsed = 0
+        if away is False:
+            secs_since_last_away += 1
+        else:
+            secs_since_last_away = 0
 
-        print(time_elapsed, away, secs_since_last_active)
+        if secs_since_last_away >= REMINDER_INTERVAL:
+            display_notification()
+            secs_since_last_away = 0
 
         current_system_code = new_system_code
         time.sleep(1)
-        time_elapsed += 1
 
 
-calculate_status()
+send_reminders()
