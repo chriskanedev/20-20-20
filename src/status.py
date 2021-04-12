@@ -1,4 +1,3 @@
-from DEFINITIONS import *
 from notification import *
 from calculate_interval import *
 
@@ -47,5 +46,3 @@ def send_reminders():
         current_system_code = new_system_code
         time.sleep(1)
 
-
-send_reminders()
