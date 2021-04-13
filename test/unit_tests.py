@@ -1,5 +1,5 @@
 import unittest
-from src.calculate_interval import *
+from src.calculate_notification_interval import *
 from src.notification import *
 
 

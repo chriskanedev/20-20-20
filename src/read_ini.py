@@ -1,7 +1,6 @@
-import configparser
 from DEFINITIONS import CONFIG_NAME
 
-# Reads a config file dynamically to a dictionary which is returned
+import configparser
 
 
 def read_ini(path):
