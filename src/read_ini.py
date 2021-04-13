@@ -1,4 +1,4 @@
-from DEFINITIONS import CONFIG_NAME
+from src.DEFINITIONS import CONFIG_NAME
 
 import configparser
 

@@ -1,5 +1,6 @@
-from notification import *
-from calculate_notification_interval import *
+from src.DEFINITIONS import NOTIFICATION_ICON_PATH
+from src.notification import *
+from src.calculate_notification_interval import *
 
 import time
 import win32api
@@ -41,7 +42,7 @@ def send_reminders(config):
 
         # Send notification if user has not been away for more than the defined interval (20 minutes as default)
         if secs_since_last_away >= defined_interval:
-            display_notification(config)
+            display_notification(config, NOTIFICATION_ICON_PATH)
             secs_since_last_away = 0
 
         current_system_code = new_system_code

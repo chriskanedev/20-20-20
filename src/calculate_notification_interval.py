@@ -1,4 +1,4 @@
-from convert_minutes_seconds import *
+from src.convert_minutes_seconds import *
 
 
 def calculate_notification_interval(config):

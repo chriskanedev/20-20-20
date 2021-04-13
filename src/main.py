@@ -1,7 +1,7 @@
 # Chris Kane | April 2021
 
-from send_reminders import send_reminders
-from read_ini import read_ini
+from src.send_reminders import send_reminders
+from src.read_ini import read_ini
 
 config = read_ini("../config.ini")
 
