@@ -13,3 +13,6 @@ class TestCalculateNotificationInterval(unittest.TestCase):
         config = read_ini("../../config.ini")
         self.assertTrue(isinstance(calculate_notification_interval(config), int))
 
+
+if __name__ == '__main__':
+    unittest.main()

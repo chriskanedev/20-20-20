@@ -10,3 +10,6 @@ class TestNotification(unittest.TestCase):
         icon_path = "../../resource/favicon.ico"
         self.assertTrue(display_notification(config, icon_path))
 
+
+if __name__ == '__main__':
+    unittest.main()
