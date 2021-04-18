@@ -1,4 +1,4 @@
-from src.DEFINITIONS import NOTIFICATION_ICON_PATH
+from src.definitions import NOTIFICATION_ICON_PATH
 from src.notification import *
 from src.calculate_notification_interval import *
 
