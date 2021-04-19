@@ -26,4 +26,11 @@ This app has a comprehensive [Unit Test](https://github.com/chriskanedev/20-20-2
 
 To run all unit tests at once, run [all_unit_test.py](https://github.com/chriskanedev/20-20-20/blob/master/test/unit_test/all_unit_test.py).
 
-### Mock
+### Data Load Doubling Functions
+
+[Read INI file configuration](https://github.com/chriskanedev/20-20-20/blob/master/src/read_ini.py).
+
+### Mocking
+The class for the mock is [ReadINI](https://github.com/chriskanedev/20-20-20/blob/master/src/read_ini_class.py).
+
+[Link to the mock](https://github.com/chriskanedev/20-20-20/blob/master/test/mock.py).
