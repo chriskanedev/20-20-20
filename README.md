@@ -22,7 +22,7 @@ Clone or download the repository and run [src/main.py](https://github.com/chrisk
 
 ## Testing
 ### Unit Testing
-This app has a comprehensive [Unit Test](https://github.com/chriskanedev/20-20-20/tree/master/test/unit_test) suite. A seperate unit test file is used to test each source file.
+This app has a comprehensive [Unit Test](https://github.com/chriskanedev/20-20-20/tree/master/test/unit_test) suite. A seperate unit test file is used to test 4 of 7 source files.
 
 To run all unit tests at once, run [all_unit_test.py](https://github.com/chriskanedev/20-20-20/blob/master/test/unit_test/all_unit_test.py).
 
