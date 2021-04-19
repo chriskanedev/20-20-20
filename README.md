@@ -11,6 +11,8 @@ A end-user friendly installation process is coming soon.
 
 Clone or download the repository and run [src/main.py](https://github.com/chriskanedev/20-20-20/blob/master/src/main.py) in a Python IDE. The reccomended IDE is [JetBrains PyCharm](https://www.jetbrains.com/pycharm/download/). 20-20-20 Reminders will automatically be sent based upon the User Configuration.
 
+Note: Under normal operation, nothing will be displayed in the console while the program runs. A debugging option is coming soon.
+
 ## User Configuration
 ### [config.ini](https://github.com/chriskanedev/20-20-20/blob/master/config.ini)
 - enable_reminders | Reminders will only be sent when this is set to y. The default is: y.
