@@ -32,10 +32,10 @@ def get_first_char_from_configs(path):
 
     return chars
 
+
 def print_config(path):
     configurations = read_ini(path)
 
     for configuration in configurations:
         print(configuration, configurations[configuration])
 
-print_config("../config.ini")
